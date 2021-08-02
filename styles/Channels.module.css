@@ -1,0 +1,45 @@
+.channels {
+    flex: 1;
+    list-style: none;
+    max-height: 100vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+@media screen and (max-width: 600px) {
+    .channels {
+        margin-top: 1rem;
+    }
+}
+.channels::-webkit-scrollbar {
+    display: none;
+}
+.channel__item {
+    display: flex;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.channel__image {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+.channel__info {
+    font-size: 14px;
+    color: gray;
+}
+.channel__info__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+.channel__info__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.channel__info__live {
+    color: red;
+}
